@@ -27,5 +27,9 @@ NMEA is currently untested:
 
 //#define GPS_PROTOCOL_NMEA
 
+Chose if you like the radar panel by commenting / uncommenting the following line
+
+#define SHOW_RADAR
+
 
 And use the 'OSD Config Tool' from my code section trunk/Tools, it's the same as of my other project minOPOSD.

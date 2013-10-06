@@ -33,3 +33,5 @@ Climb Rate (only for UBX)
 Velocity
 
 Time
+
+Radar
