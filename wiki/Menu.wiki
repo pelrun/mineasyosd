@@ -2,7 +2,7 @@
 
 * [Intro Introduction]
 
-  * [Connect How to connect GPS & OSD]
-  * [Compiling How to compile the code]
+  * [Connect How to connect]
+  * [Compiling How to compile and flash]
   * [Loading How to load the char file]
-  * [Config How to configure the OSD]
+  * [Config How to configure]

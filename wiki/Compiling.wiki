@@ -11,17 +11,17 @@ The code is here:
 
 http://code.google.com/p/mineasyosd/source/checkout
 
-You have to configure 2 things in the file OSD_Config.h before you are compiling the code:
+You have to configure 3 things in the file OSD_Config.h before compiling the code:
 
 Choose the baud rate your GPS is using by changing the following line
 
 #define GPS_BAUD_RATE			9600
 
-Chose the correct format your GPS is using by uncommenting one of the following lines
+Chose the correct format your GPS is using by commenting / uncommenting the following lines
 
 UBX is default and tested already:
 
-//#define GPS_PROTOCOL_UBX
+#define GPS_PROTOCOL_UBX
 
 NMEA is currently untested:
 

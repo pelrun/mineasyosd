@@ -1,4 +1,4 @@
-= How to solder the GPS =
+= How to connect the OSD and GPS =
 
 
 Connection overview:
