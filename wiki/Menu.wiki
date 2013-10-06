@@ -1,0 +1,8 @@
+#sidebar Menu
+
+* [Intro Introduction]
+
+  * [Connect How to connect GPS & OSD]
+  * [Compiling How to compile the code]
+  * [Loading How to load the char file]
+  * [Config How to configure the OSD]

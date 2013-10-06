@@ -1,0 +1,8 @@
+= How to solder the GPS =
+
+
+Connection overview:
+
+Connection diagram will follow later.
+
+http://mineasyosd.googlecode.com/svn/wiki/images/001_connection.jpg
