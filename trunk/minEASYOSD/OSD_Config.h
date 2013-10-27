@@ -19,7 +19,7 @@
 // JRChange: EasyTalk:
 #define PROTOCOL_EASYTALK
 
-// GPS buad rate
+// GPS baud rate
 #define GPS_BAUD_RATE			9600
 
 // JRChange: GPS protocol UBX:
