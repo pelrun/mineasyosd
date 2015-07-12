@@ -29,9 +29,8 @@
 // a character stored in flash. By using this wrapper type we can
 // auto-detect at compile time if a call to a string function is using
 // a flash-stored string or not
-typedef struct {
-    char c;
-} prog_char_t;
+#define prog_char_t char
+#define prog_char char
 
 #include <stdint.h>
 #include "include/menu.h"		/// simple menu subsystem
@@ -73,6 +72,7 @@ typedef struct {
 // in conjunction with a suitably modified Arduino IDE; never define for
 // production as it generates bad code.
 //
+/*
 #if PRINTF_FORMAT_WARNING_DEBUG
 # undef PSTR
 # define PSTR(_x)		_x		// help the compiler with printf_P
@@ -97,12 +97,14 @@ typedef struct {
 # define PSTR(s) (__extension__({static prog_char __c[] PROGMEM = (s); \
                 (prog_char_t *)&__c[0];}))
 #endif
+*/
 
 // a varient of PSTR() for progmem strings passed to %S in printf()
 // this gets the gcc __format__ checking right
 #define FPSTR(s) (wchar_t *)(s)
 
 
+/*
 static inline int strcasecmp_P(const char *str1, const prog_char_t *pstr)
 {
     return strcasecmp_P(str1, (const prog_char *)pstr);
@@ -122,8 +124,10 @@ static inline void *memcpy_P(void *dest, const prog_char_t *src, size_t n)
 {
     return memcpy_P(dest, (const prog_char *)src, n);
 }
+*/
 
 // strlcat_P() in AVR libc seems to be broken 
+/* 
 static inline size_t strlcat_P(char *d, const prog_char_t *s, size_t bufsize)
 {
 	size_t len1 = strlen(d);
@@ -142,11 +146,11 @@ static inline size_t strlcat_P(char *d, const prog_char_t *s, size_t bufsize)
 	}
 	return ret;
 }
-
-static inline char *strncpy_P(char *buffer, const prog_char_t *pstr, size_t buffer_size)
-{
-    return strncpy_P(buffer, (const prog_char *)pstr, buffer_size);
-}
+ */
+// static inline char *strncpy_P(char *buffer, const prog_char_t *pstr, size_t buffer_size)
+// {
+    // return strncpy_P(buffer, (const prog_char *)pstr, buffer_size);
+// }
 
 
 // read something the size of a pointer. This makes the menu code more

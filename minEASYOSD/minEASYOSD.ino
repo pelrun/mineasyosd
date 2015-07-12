@@ -37,11 +37,11 @@ along with this program. If not, see <http://www.gnu.org/licenses/>
 /* **************** MAIN PROGRAM - MODULES ******************** */
 /* ************************************************************ */
 
-#undef PROGMEM 
-#define PROGMEM __attribute__(( section(".progmem.data") )) 
+//#undef PROGMEM 
+//#define PROGMEM __attribute__(( section(".progmem.data") )) 
 
-#undef PSTR 
-#define PSTR(s) (__extension__({static prog_char __c[] PROGMEM = (s); &__c[0];})) 
+//#undef PSTR 
+//#define PSTR(s) (__extension__({static prog_char __c[] PROGMEM = (s); &__c[0];})) 
 
 
 /* **********************************************/
