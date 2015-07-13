@@ -70,6 +70,8 @@ static uint16_t     osd_total_A = 0;                // Battery total current [mA
 // Flight Batt on Revo
 static uint16_t     osd_est_flight_time = 0;        // Battery estimated flight time [sec]
 
+//Call sign variables
+static char         char_call[OSD_CALL_SIGN_TOTAL+1] = {0};
 
 // Panel BIT registers
 byte panA_REG[npanels] = {0b00000000};
@@ -122,7 +124,7 @@ byte panTune_XY[2][npanels];
 //byte panSetup_XY[2];
 byte panRSSI_XY[2][npanels];
 byte panDistance_XY[2][npanels];
-
+byte panCALLSIGN_XY[2][npanels];
 
 //*************************************************************************************************************
 // rssi variables
